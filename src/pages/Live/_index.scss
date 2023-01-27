@@ -1,0 +1,24 @@
+.live {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: rem(40px);
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    &__delimiter {
+        text-align: center;
+        font-weight: 800;
+        padding: 60px 0;
+    }
+}

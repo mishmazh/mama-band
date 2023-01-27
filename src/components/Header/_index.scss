@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    font-size: rem(32px);
+    font-family: $sofia;
+    text-transform: uppercase;
+
+    @include desktop() {
+        font-size: rem(28px);
+    }
+
+    @include laptop() {
+        font-size: rem(21px);
+    }
+
+    li {
+        padding: 40px 0;
+
+        a {
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        .active {
+            border-bottom: 2px solid $white;
+        }
+    }
+}

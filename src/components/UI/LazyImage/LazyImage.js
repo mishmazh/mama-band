@@ -12,7 +12,6 @@ const LazyImage = ({ src, alt }) => {
     }, []);
 
     return (
-        // <div className={`lazy-image ${isLoading ? 'lazy-image-loaded' : ''}`}>
         <div className={'lazy-image ' + clsx({ ['lazy-image-loaded']: isLoading })}>
             <img
                 className={'image ' + clsx({ ['image-loaded']: isLoading })}

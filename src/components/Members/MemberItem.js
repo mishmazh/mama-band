@@ -1,5 +1,5 @@
 import LazyImage from '../UI/LazyImage/LazyImage';
-import { masha, burda, misha, kres } from '../../helpers/images-import';
+import { burda, kres, masha, misha } from '../../helpers/images-import';
 
 const MemberItem = ({ member, title, children }) => {
     return (
@@ -16,6 +16,6 @@ const MemberItem = ({ member, title, children }) => {
             </div>
         </div>
     );
-}
+};
 
 export default MemberItem;

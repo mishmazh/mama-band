@@ -1,7 +1,7 @@
 import LazyImage from '../../components/UI/LazyImage/LazyImage';
 import { home } from '../../helpers/images-import';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div className="home">
             <LazyImage src={home} alt="home-page" />
@@ -13,4 +13,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default HomePage;

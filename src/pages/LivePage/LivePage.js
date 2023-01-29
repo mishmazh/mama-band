@@ -3,7 +3,7 @@ import LazyImage from '../../components/UI/LazyImage/LazyImage';
 import { live } from '../../helpers/images-import';
 import { liveAlready } from '../../helpers/data-storage';
 
-const Live = () => {
+const LivePage = () => {
     return (
         <div className="live">
             <LazyImage src={live} alt="live-page" />
@@ -23,4 +23,4 @@ const Live = () => {
     );
 };
 
-export default Live;
+export default LivePage;

@@ -1,11 +1,11 @@
-import gallery from '../../shared/images/gallery.jpg';
+import gallery from '../../assets/images/gallery.jpg';
 import LazyImage from '../../components/UI/LazyImage/LazyImage';
-import gallery_1 from '../../shared/images/gallery/gallery_1.jpg';
-import gallery_2 from '../../shared/images/gallery/gallery_2.jpg';
-import gallery_3 from '../../shared/images/gallery/gallery_3.jpg';
-import gallery_4 from '../../shared/images/gallery/gallery_4.jpg';
+import gallery_1 from '../../assets/images/gallery/gallery_1.jpg';
+import gallery_2 from '../../assets/images/gallery/gallery_2.jpg';
+import gallery_3 from '../../assets/images/gallery/gallery_3.jpg';
+import gallery_4 from '../../assets/images/gallery/gallery_4.jpg';
 
-const Gallery = () => {
+const GalleryPage = () => {
     return (
         <div className="gallery">
             <LazyImage src={gallery} alt="live-page" />
@@ -31,4 +31,4 @@ const Gallery = () => {
     );
 };
 
-export default Gallery;
+export default GalleryPage;

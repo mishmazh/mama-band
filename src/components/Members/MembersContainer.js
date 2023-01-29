@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import MemberItem from './MemberItem';
-import NotFound from '../../pages/NotFound/NotFound';
+import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
 
 const MembersContainer = () => {
     const masha = (
@@ -82,7 +82,7 @@ const MembersContainer = () => {
             <Route path="/burda" element={burda} />
             <Route path="/misha" element={misha} />
             <Route path="/kres" element={kres} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
 };

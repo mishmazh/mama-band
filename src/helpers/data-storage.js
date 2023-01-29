@@ -1,7 +1,7 @@
-import gallery_1 from '../shared/images/gallery/gallery_1.jpg';
-import gallery_2 from '../shared/images/gallery/gallery_2.jpg';
-import gallery_3 from '../shared/images/gallery/gallery_3.jpg';
-import gallery_4 from '../shared/images/gallery/gallery_4.jpg';
+import gallery_1 from '../assets/images/gallery/gallery_1.jpg';
+import gallery_2 from '../assets/images/gallery/gallery_2.jpg';
+import gallery_3 from '../assets/images/gallery/gallery_3.jpg';
+import gallery_4 from '../assets/images/gallery/gallery_4.jpg';
 
 // live
 export const liveAlready = [

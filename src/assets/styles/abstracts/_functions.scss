@@ -3,7 +3,7 @@
 @function strip-unit($number) {
     // stylelint-disable-next-line scss/at-rule-conditional-no-parentheses
     @if type-of($number) == "number" and not unitless($number) {
-        @return $number / ($number * 0 + 1);
+        @return math.div($number, $number * 0 + 1);
     }
 
     @return $number;

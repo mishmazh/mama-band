@@ -1,7 +1,7 @@
 import MyLink from '../../components/UI/MyLink';
 import MembersContainer from "../../components/Members/MembersContainer";
 
-const Members = () => {
+const MembersPage = () => {
     return (
         <div className="members">
             <MembersContainer />
@@ -27,4 +27,4 @@ const Members = () => {
     );
 }
 
-export default Members;
+export default MembersPage;

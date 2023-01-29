@@ -1,10 +1,10 @@
-import home from '../shared/images/main.jpg';
-import about from '../shared/images/about.jpg';
-import masha from '../shared/images/masha.jpg';
-import burda from '../shared/images/burda.jpg';
-import misha from '../shared/images/misha.jpg';
-import kres from '../shared/images/kres.jpg';
-import live from '../shared/images/live.jpg';
+import home from '../assets/images/main.jpg';
+import about from '../assets/images/about.jpg';
+import masha from '../assets/images/masha.jpg';
+import burda from '../assets/images/burda.jpg';
+import misha from '../assets/images/misha.jpg';
+import kres from '../assets/images/kres.jpg';
+import live from '../assets/images/live.jpg';
 
 export const membersImages = [masha, burda, misha, kres];
 

@@ -1,0 +1,37 @@
+.live-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px;
+
+    &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    > div {
+        width: 200px;
+    }
+
+    > div:last-child {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .date {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .city {
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    .sold {
+        background-image: url("../../app/assets/images/sold.jpg");
+        background-size: 120px 30px;
+        width: 120px;
+        height: 30px;
+    }
+}

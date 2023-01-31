@@ -1,0 +1,39 @@
+.member-item {
+    position: absolute;
+    padding-top: 180px;
+
+    p:first-child {
+        margin-top: 6px;
+    }
+}
+
+.buttons {
+    position: absolute;
+    right: 0;
+    bottom: 189px;
+    left: 175px;
+    font-size: 96px;
+    font-family: var(--font-source-code);
+
+    ul {
+        display: flex;
+
+        a {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .active {
+            color: var(--color-white);
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    font-family: var(--font-raleway-italic);
+    padding: 40px 0;
+}

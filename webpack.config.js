@@ -1,27 +1,88 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const mode = process.env.mode || 'development';
 const isDev = mode === 'development';
 const PORT = process.env.port || 3000;
 
-const buildPlugins = [
-    new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'public', 'index.html'),
-    }),
-    new webpack.ProgressPlugin(),
-];
+function buildPlugins() {
+    return [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'public', 'index.html'),
+        }),
+        new webpack.ProgressPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash:8].css',
+            chunkFilename: 'css/[name].[contenthash:8].css',
+        }),
+    ];
+}
 
-const buildResolves = {
-    extensions: ['.js', '.jsx'],
-};
+function buildLoaders() {
+    const babelLoader = {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: [
+                    '@babel/preset-env',
+                    [
+                        '@babel/preset-react',
+                        {
+                            runtime: 'automatic',
+                        },
+                    ],
+                ],
+            },
+        },
+    };
 
-const buildDevServer = {
-    port: PORT,
-    historyApiFallback: true,
-    open: true,
-};
+    const cssLoader = {
+        test: /\.s[ac]ss$/i,
+        use: [
+            isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
+            {
+                loader: 'css-loader',
+                options: {
+                    modules: {
+                        auto: (resPath) => Boolean(resPath.includes('.module.')),
+                        localIdentName: '[local]__[hash:base64:8]',
+                        exportLocalsConvention: 'dashes',
+                    },
+                },
+            },
+            'sass-loader',
+        ],
+    };
+
+    const imagesLoader = {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+    };
+
+    return [babelLoader, cssLoader, imagesLoader];
+}
+
+function buildDevServer() {
+    return {
+        port: PORT,
+        historyApiFallback: true,
+        open: true,
+    };
+}
+
+function buildResolves() {
+    return {
+        extensions: ['.js', '.jsx'],
+        preferAbsolute: true,
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        mainFiles: ['index'],
+        alias: {}
+    };
+}
 
 module.exports = {
     mode: mode,
@@ -33,41 +94,10 @@ module.exports = {
         publicPath: '/',
         clean: true,
     },
-    plugins: buildPlugins,
+    plugins: buildPlugins(),
     module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            '@babel/preset-env',
-                            [
-                                '@babel/preset-react',
-                                {
-                                    runtime: 'automatic',
-                                },
-                            ],
-                        ],
-                    },
-                },
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: 'asset/resource',
-            },
-        ],
+        rules: buildLoaders(),
     },
-    resolve: buildResolves,
-    devServer: isDev ? buildDevServer : undefined,
+    resolve: buildResolves(),
+    devServer: isDev ? buildDevServer() : undefined,
 };

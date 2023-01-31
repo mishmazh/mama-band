@@ -1,0 +1,12 @@
+.body {
+    position: absolute;
+    padding-top: 180px;
+
+    .text-content {
+        font-size: 20px;
+
+        p:first-child {
+            margin-top: 6px;
+        }
+    }
+}

@@ -1,14 +1,18 @@
-import LazyImage from '../../components/UI/LazyImage/LazyImage';
-import { about } from '../../helpers/images-import';
+import classes from './AboutPage.module.scss';
+import LazyImage from '../../shared/components/LazyImage/LazyImage';
+import { about } from '../../shared/images-import';
+import Container from '../../shared/components/Container/Container';
+import Title from '../../shared/components/Title/Title';
+import FullHeight from '../../shared/components/FullHeight/FullHeight';
 
 const AboutPage = () => {
     return (
-        <div className="about">
+        <FullHeight>
             <LazyImage src={about} alt="about-page" />
-            <div className="container">
-                <div className="about__body">
-                    <div className="title">М.А.М.А.</div>
-                    <div className="content">
+            <Container>
+                <div className={classes.body}>
+                    <Title>М.А.М.А.</Title>
+                    <div className={classes.textContent}>
                         <p>
                             Группа появилась на заре 2020 года, когда мир еще не знал кто такие
                             дота-реперы, фонк исполнители и прочие создатели “хорошей” музыки.
@@ -38,9 +42,9 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </Container>
+        </FullHeight>
     );
-}
+};
 
 export default AboutPage;

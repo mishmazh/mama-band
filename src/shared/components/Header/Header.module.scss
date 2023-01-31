@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 32px;
+    font-family: var(--font-sofia);
+    text-transform: uppercase;
+
+    @media (max-width: 1200px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 21px;
+    }
+
+    li {
+        padding: 40px 0;
+
+        a {
+            &:hover {
+                border-bottom: 2px solid var(--color-white);
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        .active {
+            border-bottom: 2px solid var(--color-white);
+        }
+    }
+}

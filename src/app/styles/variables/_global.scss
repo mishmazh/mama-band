@@ -1,0 +1,16 @@
+:root {
+    --font-raleway: 'Raleway-Light', sans-serif;
+    --font-raleway-italic: 'Raleway-Italic', sans-serif;
+    --font-sofia: 'SofiaSans', sans-serif;
+    --font-source-code: 'SourceCodePro', sans-serif;
+
+    --font-family-base: var(--font-raleway);
+
+    --font-size-base: 20px;
+    --font-size-lg: 24px;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --bg-noise: url("../assets/images/noise.jpg");
+}

@@ -1,6 +1,6 @@
 import classes from "./Header.module.scss";
-import MyLink from '../MyLink';
-import Container from '../Container/Container';
+import MyLink from 'shared/components/MyLink';
+import Container from 'shared/components/Container/Container';
 
 const Header = () => {
     return (

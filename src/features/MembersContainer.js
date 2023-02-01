@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import MemberItem from './MemberItem';
+import MemberItem from 'entities/MemberItem/MemberItem';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 
 const MembersContainer = () => {

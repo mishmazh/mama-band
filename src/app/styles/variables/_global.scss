@@ -7,10 +7,18 @@
     --font-family-base: var(--font-raleway);
 
     --font-size-base: 20px;
-    --font-size-lg: 24px;
+    --font-line-base: 28px;
 
     --color-white: #fff;
     --color-black: #000;
 
-    --bg-noise: url("../assets/images/noise.jpg");
+    --bg-loading: url("shared/assets/images/noise.jpg");
+
+    @media (max-width: 768px) {
+        --font-size-base: 17px;
+    }
+
+    @media (max-width: 576px) {
+        --font-size-base: 14px;
+    }
 }

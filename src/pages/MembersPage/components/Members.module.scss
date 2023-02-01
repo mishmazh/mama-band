@@ -1,12 +1,3 @@
-.member-item {
-    position: absolute;
-    padding-top: 180px;
-
-    p:first-child {
-        margin-top: 6px;
-    }
-}
-
 .buttons {
     position: absolute;
     right: 0;
@@ -14,15 +5,25 @@
     left: 175px;
     font-size: 96px;
     font-family: var(--font-source-code);
+    user-select: none;
+
+    @media (max-width: 992px) {
+        left: 0;
+    }
 
     ul {
         display: flex;
 
         a {
             color: rgba(255, 255, 255, 0.3);
+            transition: 0.1s;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.7);
+            }
         }
 
-        .active {
+        a[class="active"] {
             color: var(--color-white);
         }
     }
@@ -37,3 +38,4 @@
     font-family: var(--font-raleway-italic);
     padding: 40px 0;
 }
+

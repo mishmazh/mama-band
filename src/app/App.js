@@ -2,7 +2,7 @@ import './styles/index.scss';
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from 'pages/HomePage/HomePage';
-import Header from 'shared/components/Header/Header';
+import Header from 'widgets/Header/Header';
 import AboutPage from 'pages/AboutPage/AboutPage';
 import LivePage from 'pages/LivePage/LivePage';
 import DiscographyPage from 'pages/DiscographyPage/DiscographyPage';
@@ -16,7 +16,7 @@ const App = () => {
             <Header />
             <Suspense>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route exact path="/" element={<HomePage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/members/*" element={<MembersPage />} />
                     <Route path="/live" element={<LivePage />} />

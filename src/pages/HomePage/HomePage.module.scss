@@ -6,9 +6,25 @@
     text-align: center;
     margin-bottom: 52px;
     font-family: 'SourceCodePro', sans-serif;
+    user-select: none;
 
     .title {
         font-size: 128px;
         margin-bottom: 22px;
+
+        @media (max-width: 768px) {
+            font-size: 96px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .sub-title {
+        @media (max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }

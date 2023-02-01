@@ -2,10 +2,10 @@
 @import "reset";
 @import "variables/global";
 
-// classes
 .app {
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
+
     color: var(--color-white);
     height: 100vh;
     background-color: var(--color-black);

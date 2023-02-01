@@ -1,30 +1,34 @@
-import gallery from '../../../app/assets/images/gallery.jpg';
-import gallery_1 from '../../../app/assets/images/gallery/gallery_1.jpg';
-import gallery_2 from '../../../app/assets/images/gallery/gallery_2.jpg';
-import gallery_3 from '../../../app/assets/images/gallery/gallery_3.jpg';
-import gallery_4 from '../../../app/assets/images/gallery/gallery_4.jpg';
 import classes from './GalleryPage.module.scss';
-import LazyImage from '../../../shared/components/LazyImage/LazyImage';
-import Container from '../../../shared/components/Container/Container';
+import {
+    bg_gallery,
+    gallery_1,
+    gallery_2,
+    gallery_3,
+    gallery_4,
+} from 'shared/lib/imagesImport';
+import Container from 'shared/components/Container/Container';
+import Image from 'shared/components/Image/Image';
+import HeaderTitle from "widgets/HeaderTitle/HeaderTitle";
 
 const GalleryPage = () => {
     return (
         <div className={classes.center}>
-            <LazyImage src={gallery} alt="live-page" />
+            <Image src={bg_gallery} alt="live-page" />
+            <HeaderTitle>Галерея</HeaderTitle>
             <div className={classes.body}>
                 <Container>
                     <div className={classes.grid}>
                         <div className={classes.item1}>
-                            <img src={gallery_1} alt="" />
+                            <Image src={gallery_1} alt="gallery-1" />
                         </div>
                         <div className={classes.item2}>
-                            <img src={gallery_2} alt="" />
+                            <img src={gallery_2} alt="gallery-2" />
                         </div>
                         <div className={classes.item3}>
-                            <img src={gallery_3} alt="" />
+                            <img src={gallery_3} alt="gallery-3" />
                         </div>
                         <div className={classes.item4}>
-                            <img src={gallery_4} alt="" />
+                            <img src={gallery_4} alt="gallery-4" />
                         </div>
                     </div>
                 </Container>

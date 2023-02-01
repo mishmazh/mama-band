@@ -16,6 +16,14 @@
         font-size: 21px;
     }
 
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 576px) {
+        display: none;
+    }
+    
     li {
         padding: 40px 0;
 
@@ -24,16 +32,14 @@
                 border-bottom: 2px solid var(--color-white);
             }
         }
+
+        a[class="active"] {
+            border-bottom: 2px solid var(--color-white);
+        }
     }
 
     ul {
         display: flex;
         justify-content: space-around;
-    }
-
-    nav {
-        .active {
-            border-bottom: 2px solid var(--color-white);
-        }
     }
 }

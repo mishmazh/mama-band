@@ -1,8 +1,8 @@
-import MyLink from '../../../shared/components/MyLink';
-import MembersContainer from './MembersContainer';
-import Container from '../../../shared/components/Container/Container';
 import classes from './Members.module.scss';
-import FullHeight from '../../../shared/components/FullHeight/FullHeight';
+import MyLink from 'shared/components/MyLink';
+import MembersContainer from 'features/MembersContainer';
+import Container from 'shared/components/Container/Container';
+import FullHeight from 'shared/components/FullHeight/FullHeight';
 
 const MembersPage = () => {
     return (

@@ -10,7 +10,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background-image: var(--bg-noise);
+        background-image: var(--bg-loading);
         animation: loading .1s steps(10) infinite;
     }
 

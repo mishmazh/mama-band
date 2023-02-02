@@ -1,10 +1,9 @@
 import classes from './LivePage.module.scss';
 import { bg_live } from 'shared/lib/imagesImport';
 import Container from 'shared/components/Container/Container';
-import FullHeight from 'shared/components/FullHeight/FullHeight';
 import LiveList from 'features/LiveList';
 import Image from 'shared/components/Image/Image';
-import HeaderTitle from "../../entities/HeaderTitle/HeaderTitle";
+import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const LivePage = () => {
     const alreadyItems = [
@@ -31,7 +30,7 @@ const LivePage = () => {
     const futureItems = [];
 
     return (
-        <FullHeight>
+        <div className={classes.livePage}>
             <Image src={bg_live} alt="live-page" />
             <HeaderTitle>Live</HeaderTitle>
             <div className={classes.body}>
@@ -42,7 +41,7 @@ const LivePage = () => {
                     <LiveList liveItems={alreadyItems} />
                 </Container>
             </div>
-        </FullHeight>
+        </div>
     );
 };
 

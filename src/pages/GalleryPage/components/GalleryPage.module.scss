@@ -1,11 +1,11 @@
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gallery-page {
     height: 100%;
 
     .body {
         position: absolute;
+        top: 180px;
+        right: 0;
+        left: 0;
 
         .grid {
             display: grid;

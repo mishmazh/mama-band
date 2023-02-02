@@ -12,6 +12,8 @@ import gallery_2 from '../assets/images/gallery/gallery_2.jpg';
 import gallery_3 from '../assets/images/gallery/gallery_3.jpg';
 import gallery_4 from '../assets/images/gallery/gallery_4.jpg';
 import bg_home_mobile from '../assets/images/bg-home-mobile.jpg';
+import cover from '../assets/images/cover.jpg';
+import itunes from '../assets/images/itunes.jpg';
 
 export {
     bg_home,
@@ -27,5 +29,7 @@ export {
     gallery_2,
     gallery_3,
     gallery_4,
-    bg_home_mobile
+    bg_home_mobile,
+    cover,
+    itunes
 };

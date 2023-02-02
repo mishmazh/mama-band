@@ -2,18 +2,17 @@ import classes from './AboutPage.module.scss';
 import { bg_about } from 'shared/lib/imagesImport';
 import Container from 'shared/components/Container/Container';
 import Title from 'shared/components/Title/Title';
-import FullHeight from 'shared/components/FullHeight/FullHeight';
 import Image from "shared/components/Image/Image";
 import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const AboutPage = () => {
     return (
-        <FullHeight>
+        <div className={classes.aboutPage}>
             <Image src={bg_about} alt="about-page" isAbsolute />
             <HeaderTitle>О группе</HeaderTitle>
             <Container>
                 <div className={classes.body}>
-                    <Title>М.А.М.А.</Title>
+                    <div className={classes.title}>М.А.М.А.</div>
                     <div className={classes.textContent}>
                         <p>
                             Группа появилась на заре 2020 года, когда мир еще не знал кто такие
@@ -45,7 +44,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </Container>
-        </FullHeight>
+        </div>
     );
 };
 

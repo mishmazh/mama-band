@@ -2,11 +2,10 @@ import classes from './Members.module.scss';
 import MyLink from 'shared/components/MyLink';
 import MembersContainer from 'features/MembersContainer';
 import Container from 'shared/components/Container/Container';
-import FullHeight from 'shared/components/FullHeight/FullHeight';
 
 const MembersPage = () => {
     return (
-        <FullHeight>
+        <div className={classes.membersPage}>
             <MembersContainer />
             <div className={classes.buttons}>
                 <Container>
@@ -26,7 +25,7 @@ const MembersPage = () => {
                     когда-либо жившими людьми случайно.
                 </Container>
             </div>
-        </FullHeight>
+        </div>
     );
 };
 

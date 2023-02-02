@@ -1,12 +1,14 @@
 @import "fonts";
 @import "reset";
-@import "variables/global";
+@import "variables";
 
 .app {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-
+    font: var(--font-base);
     color: var(--color-white);
     height: 100vh;
-    background-color: var(--color-black);
+}
+
+html {
+    background: var(--bg-loading) no-repeat center center fixed;
+    background-size: cover;
 }

@@ -14,8 +14,8 @@ function buildPlugins() {
         }),
         new webpack.ProgressPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].css',
-            chunkFilename: 'css/[name].[contenthash:8].css',
+            filename: 'styles/[name].[contenthash:8].css',
+            chunkFilename: 'styles/[name].[contenthash:8].css',
         }),
     ];
 }
@@ -54,16 +54,32 @@ function buildLoaders() {
                     },
                 },
             },
+            {
+                loader: 'postcss-loader',
+                options: {
+                    postcssOptions: {
+                        plugins: [['postcss-preset-env']],
+                    },
+                },
+            },
             'sass-loader',
         ],
     };
 
-    const imagesLoader = {
+    const assetImages = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
     };
 
-    return [babelLoader, cssLoader, imagesLoader];
+    const assetFonts = {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+            filename: 'assets/fonts/[name].[ext]'
+        }
+    };
+
+    return [babelLoader, cssLoader, assetImages, assetFonts];
 }
 
 function buildDevServer() {
@@ -80,7 +96,7 @@ function buildResolves() {
         preferAbsolute: true,
         modules: [path.resolve(__dirname, 'src'), 'node_modules'],
         mainFiles: ['index'],
-        alias: {}
+        alias: {},
     };
 }
 
@@ -90,7 +106,7 @@ module.exports = {
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'build'),
-        assetModuleFilename: 'assets/[name].[contenthash][ext]',
+        assetModuleFilename: 'assets/images/[name].[contenthash][ext]',
         publicPath: '/',
         clean: true,
     },

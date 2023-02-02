@@ -1,41 +1,41 @@
-.buttons {
-    position: absolute;
-    right: 0;
-    bottom: 189px;
-    left: 175px;
-    font-size: 96px;
-    font-family: var(--font-source-code);
-    user-select: none;
+.members-page {
+    .buttons {
+        position: absolute;
+        right: 0;
+        bottom: 189px;
+        left: 175px;
+        font: var(--title-base);
+        user-select: none;
 
-    @media (max-width: 992px) {
-        left: 0;
-    }
+        @media (max-width: 992px) {
+            left: 0;
+        }
 
-    ul {
-        display: flex;
+        ul {
+            display: flex;
 
-        a {
-            color: rgba(255, 255, 255, 0.3);
-            transition: color 0.1s;
+            a {
+                color: rgba(255, 255, 255, 0.3);
+                transition: color 0.1s;
 
-            &:hover {
-                color: rgba(255, 255, 255, 0.7);
+                &:hover {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+
+            a[class="active"] {
+                color: var(--color-white);
             }
         }
+    }
 
-        a[class="active"] {
-            color: var(--color-white);
-        }
+    .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 16px;
+        font-family: var(--font-raleway-italic);
+        padding: 40px 0;
     }
 }
-
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-size: 16px;
-    font-family: var(--font-raleway-italic);
-    padding: 40px 0;
-}
-

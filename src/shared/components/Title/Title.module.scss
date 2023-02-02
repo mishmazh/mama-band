@@ -1,7 +1,5 @@
 .title {
-    font-size: 96px;
-    line-height: 104px;
-    font-family: var(--font-source-code);
+    font: var(--title-base);
 
     @media (max-width: 992px) {
         font-size: 58px;

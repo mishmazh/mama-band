@@ -1,5 +1,107 @@
-.discography {
-    background: url("../../shared/assets/images/bg-discography.jpg") no-repeat center center fixed;
-    background-size: cover;
+.discography-page {
     height: 100%;
+
+    .mobile-hidden {
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .body {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        left: 0;
+
+        @media (max-width: 576px) {
+            top: 90px;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 992px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cover {
+                max-width: 506px;
+                width: 100%;
+                margin-bottom: 40px;
+
+                @media (max-width: 576px) {
+                    width: 80%;
+                }
+            }
+
+            .release {
+                max-width: 708px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+
+                @media (max-width: 1200px) {
+                    max-width: 369px;
+                }
+
+                .title,
+                .subtitle {
+                    font-size: 32px;
+                    line-height: 40px;
+
+                    @media (max-width: 576px) {
+                        font-size: 20px;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 25px;
+
+                    @media (max-width: 576px) {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .subtitle {
+                    margin-bottom: 14px;
+                }
+
+                ul {
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 25px;
+
+                    @media (max-width: 576px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    li {
+                        color: rgba(255, 255, 255, 0.8);
+
+                        span {
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+                .itunes {
+                    background-image: url("shared/assets/images/itunes.jpg");
+                    background-size: 190px 51px;
+                    width: 190px;
+                    height: 51px;
+                    border-radius: 10px;
+                    margin: auto;
+
+                    @media (max-width: 576px) {
+                        background-size: 109px 29px;
+                        width: 109px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -8,7 +8,7 @@
     animation: loading .1s steps(20) infinite;
 
     .item {
-        font-size: 128px;
+        font: var(--title-lg);
         font-family: var(--font-sofia);
     }
 

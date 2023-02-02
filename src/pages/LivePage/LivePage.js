@@ -4,26 +4,23 @@ import Container from 'shared/components/Container/Container';
 import FullHeight from 'shared/components/FullHeight/FullHeight';
 import LiveList from 'features/LiveList';
 import Image from 'shared/components/Image/Image';
-import HeaderTitle from "../../widgets/HeaderTitle/HeaderTitle";
+import HeaderTitle from "../../entities/HeaderTitle/HeaderTitle";
 
 const LivePage = () => {
     const alreadyItems = [
         {
-            id: 1,
             date: '22.12.2022',
             name: 'Music Workshop',
             city: 'Санкт-Петербург',
             isSold: true,
         },
         {
-            id: 2,
             date: '04.08.2022',
             name: 'Hendrix Studio',
             city: 'Москва',
             isSold: true,
         },
         {
-            id: 3,
             date: '30.12.2021',
             name: 'Zebra Audio',
             city: 'Москва',

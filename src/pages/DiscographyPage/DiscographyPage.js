@@ -1,6 +1,6 @@
 import { bg_discography } from 'shared/lib/imagesImport';
 import Image from 'shared/components/Image/Image';
-import HeaderTitle from "widgets/HeaderTitle/HeaderTitle";
+import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const DiscographyPage = () => {
     return (

@@ -1,5 +1,5 @@
 import './styles/index.scss';
-import { Suspense } from 'react';
+import {Suspense, useEffect, useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from 'pages/HomePage/HomePage';
 import Header from 'widgets/Header/Header';
@@ -9,11 +9,13 @@ import DiscographyPage from 'pages/DiscographyPage/DiscographyPage';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import { MembersPage } from 'pages/MembersPage';
 import { GalleryPage } from 'pages/GalleryPage';
+import MobileNavigation from "../widgets/MobileNavigation";
 
 const App = () => {
     return (
         <div className="app">
             <Header />
+            <MobileNavigation />
             <Suspense>
                 <Routes>
                     <Route exact path="/" element={<HomePage />} />

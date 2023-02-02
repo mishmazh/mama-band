@@ -49,7 +49,7 @@ function buildLoaders() {
                 options: {
                     modules: {
                         auto: (resPath) => Boolean(resPath.includes('.module.')),
-                        localIdentName: '[local]__[hash:base64:8]',
+                        localIdentName: '[local]__[hash:base64:5]',
                         exportLocalsConvention: 'dashes',
                     },
                 },

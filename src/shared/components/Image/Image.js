@@ -1,10 +1,10 @@
 import classes from './Image.module.scss';
-import clsx from 'clsx';
+import { classNames } from '../../lib/classNames';
 
 const Image = ({ src, alt, isAbsolute = false }) => {
     return (
         <img
-            className={clsx(classes.image, { [classes.absolute]: isAbsolute })}
+            className={classNames(classes.image, { [classes.absolute]: isAbsolute })}
             src={src}
             alt={alt}
         />

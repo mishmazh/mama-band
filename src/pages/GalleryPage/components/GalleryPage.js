@@ -8,7 +8,7 @@ import {
 } from 'shared/lib/imagesImport';
 import Container from 'shared/components/Container/Container';
 import Image from 'shared/components/Image/Image';
-import HeaderTitle from "widgets/HeaderTitle/HeaderTitle";
+import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const GalleryPage = () => {
     return (

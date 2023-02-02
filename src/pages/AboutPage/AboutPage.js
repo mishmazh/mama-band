@@ -4,7 +4,7 @@ import Container from 'shared/components/Container/Container';
 import Title from 'shared/components/Title/Title';
 import FullHeight from 'shared/components/FullHeight/FullHeight';
 import Image from "shared/components/Image/Image";
-import HeaderTitle from "widgets/HeaderTitle/HeaderTitle";
+import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const AboutPage = () => {
     return (

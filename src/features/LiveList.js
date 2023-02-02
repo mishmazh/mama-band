@@ -8,8 +8,8 @@ const LiveList = ({ liveItems }) => {
 
     return (
         <div>
-            {liveItems.map((item) => {
-                return <LiveItem item={item} key={item.id} />;
+            {liveItems.map((items, key) => {
+                return <LiveItem items={items} key={key} />;
             })}
         </div>
     );

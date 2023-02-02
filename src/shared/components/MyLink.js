@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
-const MyLink = ({ to, children }) => {
+const MyLink = ({ to, children, onClick }) => {
     return (
         <li>
-            <NavLink to={to}>{children}</NavLink>
+            <NavLink to={to} onClick={onClick}>{children}</NavLink>
         </li>
     );
 }

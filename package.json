@@ -9,7 +9,7 @@
     "build:dev": "set mode=development&&webpack",
     "deploy": "gh-pages -d build"
   },
-  "author": "mishmazh",
+  "author": "mishmazh-kres",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
@@ -21,7 +21,6 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
-    "clsx": "^1.2.1",
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",

@@ -7,10 +7,11 @@ import masha from '../assets/images/members/masha.jpg';
 import burda from '../assets/images/members/burda.jpg';
 import misha from '../assets/images/members/misha.jpg';
 import kres from '../assets/images/members/kres.jpg';
-import gallery_1 from 'shared/assets/images/gallery/gallery_1.jpg';
-import gallery_2 from 'shared/assets/images/gallery/gallery_2.jpg';
-import gallery_3 from 'shared/assets/images/gallery/gallery_3.jpg';
-import gallery_4 from 'shared/assets/images/gallery/gallery_4.jpg';
+import gallery_1 from '../assets/images/gallery/gallery_1.jpg';
+import gallery_2 from '../assets/images/gallery/gallery_2.jpg';
+import gallery_3 from '../assets/images/gallery/gallery_3.jpg';
+import gallery_4 from '../assets/images/gallery/gallery_4.jpg';
+import bg_home_mobile from '../assets/images/bg-home-mobile.jpg';
 
 export {
     bg_home,
@@ -26,4 +27,5 @@ export {
     gallery_2,
     gallery_3,
     gallery_4,
+    bg_home_mobile
 };

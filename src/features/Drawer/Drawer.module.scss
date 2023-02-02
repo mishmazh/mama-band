@@ -1,0 +1,37 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    background-image: var(--bg-loading);
+    font-size: 32px;
+    font-family: var(--font-sofia);
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    transform: translateY(-100%);
+    transition: transform 0.30s;
+
+    @media (min-width: 576px) {
+        display: none;
+    }
+
+    &.open {
+        transform: translateY(0);
+    }
+
+    ul {
+        max-width: 257px;
+        width: 100%;
+        margin: auto;
+    }
+
+    li {
+        padding: 13px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-white);
+        }
+    }
+}

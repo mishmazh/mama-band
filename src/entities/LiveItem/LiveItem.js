@@ -1,7 +1,7 @@
 import classes from "./LiveItem.module.scss";
 
-const LiveItem = ({ item }) => {
-    const { date, name, city, isSold } = item;
+const LiveItem = ({ items }) => {
+    const { date, name, city, isSold } = items;
 
     return (
         <div className={classes.liveItem}>

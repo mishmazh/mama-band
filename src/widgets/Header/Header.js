@@ -1,6 +1,7 @@
-import classes from "./Header.module.scss";
+import classes from './Header.module.scss';
 import MyLink from 'shared/components/MyLink';
 import Container from 'shared/components/Container/Container';
+import { navLinks } from 'shared/lib/navLinks';
 
 const Header = () => {
     return (
@@ -8,12 +9,9 @@ const Header = () => {
             <Container>
                 <nav>
                     <ul>
-                        <MyLink to="/">Главная</MyLink>
-                        <MyLink to="/about">О группе</MyLink>
-                        <MyLink to="/members/masha">Участники</MyLink>
-                        <MyLink to="/live">Live</MyLink>
-                        <MyLink to="/gallery">Галерея</MyLink>
-                        <MyLink to="/discography">Дискография</MyLink>
+                        {navLinks.map(({ to, text }, key) => {
+                            return <MyLink to={to} key={key}>{text}</MyLink>;
+                        })}
                     </ul>
                 </nav>
             </Container>

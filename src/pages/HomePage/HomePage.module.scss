@@ -5,8 +5,14 @@
     left: 0;
     text-align: center;
     margin-bottom: 52px;
-    font-family: 'SourceCodePro', sans-serif;
+    font-family: var(--font-source-code);
     user-select: none;
+    animation: start 1.2s;
+
+    @media (max-width: 576px) {
+        bottom: 43%;
+        margin-bottom: 0;
+    }
 
     .title {
         font-size: 128px;
@@ -17,14 +23,24 @@
         }
 
         @media (max-width: 576px) {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 26px;
+            margin-bottom: 0;
         }
     }
 
     .sub-title {
         @media (max-width: 576px) {
             font-size: 14px;
+        }
+    }
+
+    @keyframes start {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }

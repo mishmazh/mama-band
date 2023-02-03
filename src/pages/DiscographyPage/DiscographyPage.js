@@ -1,31 +1,13 @@
-import { bg_discography, cover } from 'shared/lib/imagesImport';
-import classes from './Discography.module.scss';
+import { cover } from 'shared/lib/imagesImport';
+import classes from './DiscographyPage.module.scss';
 import Image from 'shared/components/Image/Image';
 import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
 import Container from 'shared/components/Container/Container';
+import { album } from 'shared/lib/dataStorage';
 
 const DiscographyPage = () => {
-    const album = [
-        { number: '1.', name: 'Претенд' },
-        { number: '2.', name: 'Диспансер' },
-        { number: '3.', name: 'Мудрое дерево' },
-        { number: '4.', name: 'Страха нет' },
-        { number: '5.', name: 'Селин' },
-        { number: '6.', name: 'Дeлимобиль' },
-        { number: '7.', name: 'Барка' },
-        { number: '8.', name: 'Мотя' },
-        { number: '9.', name: 'Не курю уже месяц' },
-        { number: '10.', name: 'Маша Фортуна, покажи...' },
-    ];
-
     return (
         <div className={classes.discographyPage}>
-            <Image
-                src={bg_discography}
-                className={classes.mobileHidden}
-                alt="discography"
-                isAbsolute
-            />
             <HeaderTitle>Дискография</HeaderTitle>
             <div className={classes.body}>
                 <Container>

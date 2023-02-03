@@ -1,12 +1,18 @@
 .about-page {
     height: 100%;
+    background: url("shared/assets/images/bg-about.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
 
     .body {
-        position: absolute;
         padding-top: 180px;
 
         .title {
-            font: var(--title-base);
+            font-family: var(--font-source-code);
+            font-size: 96px;
 
             @media (max-width: 576px) {
                 display: none;
@@ -16,12 +22,12 @@
         .text-content {
             width: 60%;
 
-            @media (max-width: 1200px) {
-                width: 75%;
-            }
-
             @media (max-width: 992px) {
                 width: 85%;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
             }
         }
     }

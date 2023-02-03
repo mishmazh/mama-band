@@ -1,7 +1,7 @@
 import classes from './Drawer.module.scss';
-import { navLinks } from 'shared/lib/navLinks';
+import { navLinks } from 'shared/lib/dataStorage';
 import MyLink from 'shared/components/MyLink';
-import { classNames } from '../../shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames';
 
 const Drawer = ({ isOpen, closeMenu }) => {
     return (

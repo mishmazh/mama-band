@@ -1,4 +1,4 @@
-import classes from './Members.module.scss';
+import classes from './MembersPage.module.scss';
 import MyLink from 'shared/components/MyLink';
 import MembersContainer from 'features/MembersContainer';
 import Container from 'shared/components/Container/Container';

@@ -1,14 +1,10 @@
 import classes from './AboutPage.module.scss';
-import { bg_about } from 'shared/lib/imagesImport';
 import Container from 'shared/components/Container/Container';
-import Title from 'shared/components/Title/Title';
-import Image from "shared/components/Image/Image";
 import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 
 const AboutPage = () => {
     return (
         <div className={classes.aboutPage}>
-            <Image src={bg_about} alt="about-page" isAbsolute />
             <HeaderTitle>О группе</HeaderTitle>
             <Container>
                 <div className={classes.body}>

@@ -21,5 +21,10 @@
     @media (max-width: 768px) {
         max-width: 540px;
     }
+
+    @media (max-width: 576px) {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
 }
 

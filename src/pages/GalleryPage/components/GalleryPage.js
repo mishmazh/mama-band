@@ -1,6 +1,5 @@
 import classes from './GalleryPage.module.scss';
 import {
-    bg_gallery,
     gallery_1,
     gallery_2,
     gallery_3,
@@ -13,7 +12,6 @@ import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 const GalleryPage = () => {
     return (
         <div className={classes.galleryPage}>
-            <Image src={bg_gallery} alt="live-page" />
             <HeaderTitle>Галерея</HeaderTitle>
             <div className={classes.body}>
                 <Container>

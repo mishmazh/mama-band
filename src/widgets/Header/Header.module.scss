@@ -29,12 +29,12 @@
 
         a {
             &:hover {
-                border-bottom: 2px solid var(--color-white);
+                border-bottom: 2px solid #fff;
             }
         }
 
         a[class="active"] {
-            border-bottom: 2px solid var(--color-white);
+            border-bottom: 2px solid #fff;
         }
     }
 

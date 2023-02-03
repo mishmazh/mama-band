@@ -11,6 +11,7 @@ function buildPlugins() {
     return [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html'),
+            favicon: './public/favicon.gif',
         }),
         new webpack.ProgressPlugin(),
         new MiniCssExtractPlugin({
@@ -75,8 +76,8 @@ function buildLoaders() {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
         generator: {
-            filename: 'assets/fonts/[name].[ext]'
-        }
+            filename: 'assets/fonts/[name].[ext]',
+        },
     };
 
     return [babelLoader, cssLoader, assetImages, assetFonts];

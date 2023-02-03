@@ -1,25 +1,103 @@
 .member-item {
-    position: absolute;
-    padding-top: 180px;
+    height: 100%;
 
-    .title {
-        font-size: 96px;
-        font-family: var(--font-source-code);
-
-        @media (max-width: 992px) {
-            font-size: 55px;
-        }
-
-        @media (max-width: 576px) {
-            font-size: 32px;
+    .image-hidden {
+        @media (min-width: 576px) {
+            display: none;
+            margin-bottom: 15px;
         }
     }
 
-    .text-content {
-        width: 50%;
+    .body {
+        padding-top: 180px;
 
-        @media (max-width: 1200px) {
-            width: 80%;
+        @media (max-width: 576px) {
+            padding-top: 80px;
         }
+
+        .title {
+            display: flex;
+            font-size: 96px;
+            font-family: var(--font-source-code);
+
+            @media (max-width: 992px) {
+                font-size: 55px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 32px;
+                justify-content: center;
+            }
+
+            .left,
+            .right {
+                width: 42px;
+                height: 42px;
+
+                @media (min-width: 576px) {
+                    display: none;
+                }
+            }
+
+            .left {
+                background-image: url("shared/assets/images/arrow-left.jpg");
+            }
+
+            .right {
+                background-image: url("shared/assets/images/arrow-right.jpg");
+            }
+        }
+
+        .text-content {
+            width: 50%;
+
+            @media (max-width: 1200px) {
+                width: 80%;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.member-item.masha,
+.member-item.burda,
+.member-item.misha,
+.member-item.kres {
+    background-size: cover;
+    overflow: auto;
+}
+
+.member-item.masha {
+    background: url('shared/assets/images/members/masha.jpg') no-repeat center center fixed;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+}
+
+.member-item.burda {
+    background: url('shared/assets/images/members/burda.jpg') no-repeat center center fixed;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+}
+
+.member-item.misha {
+    background: url('shared/assets/images/members/misha.jpg') no-repeat center center fixed;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+}
+
+.member-item.kres {
+    background: url('shared/assets/images/members/kres.jpg') no-repeat center center fixed;
+
+    @media (max-width: 576px) {
+        background-image: none;
     }
 }

@@ -2,9 +2,14 @@
     height: 100%;
     background: url("shared/assets/images/bg-live.jpg") no-repeat center center fixed;
     background-size: cover;
+    overflow: auto;
 
     .body {
-        padding-top: 200px;
+        padding-top: 230px;
+
+        @media (max-width: 576px) {
+            padding-top: 80px;
+        }
 
         .title {
             font-size: 40px;

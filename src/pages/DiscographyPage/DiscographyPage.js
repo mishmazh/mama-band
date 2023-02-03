@@ -28,7 +28,9 @@ const DiscographyPage = () => {
                                     );
                                 })}
                             </ul>
-                            <div className={classes.itunes} />
+                            <a href="https://vk.com/club213535217" target="_blank">
+                                <div className={classes.itunes} />
+                            </a>
                         </div>
                     </div>
                 </Container>

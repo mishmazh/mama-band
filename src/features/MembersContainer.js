@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import MemberItem from 'entities/MemberItem/MemberItem';
+import { MemberItem } from 'entities/Members/MemberItem/MemberItem';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 
 const MembersContainer = () => {
     const masha = (
-        <MemberItem member="masha" title="Мария Зальцман" right="burda">
+        <MemberItem member="masha" title="Мария Зальцман" rightTo="burda">
             <p>Клавишница со стажем. Может сыграть Франца Фердинанта с закрытыми глазами.</p>
             <p>
                 Очень холодна и расчетлива, из-за чего участники группы думают, что она
@@ -20,7 +20,7 @@ const MembersContainer = () => {
     );
 
     const burda = (
-        <MemberItem member="burda" title="Александр Бурда" left="masha" right="misha">
+        <MemberItem member="burda" title="Александр Бурда" leftTo="masha" rightTo="misha">
             <p>
                 Гитарист, басист, барабанщик, клавишник, вокалист, солист, баскетболист,
                 волейболист, футболист, нигилист, фаталист, монополист и многое-многое другое.
@@ -41,7 +41,7 @@ const MembersContainer = () => {
     );
 
     const misha = (
-        <MemberItem member="misha" title="Михаил Маженин" left="burda" right="kres">
+        <MemberItem member="misha" title="Михаил Маженин" leftTo="burda" rightTo="kres">
             <p>
                 Начинающий барабанщик, хотя имеет дома ударную установку, которую ему привезли и
                 собрали немцы.
@@ -59,7 +59,7 @@ const MembersContainer = () => {
     );
 
     const kres = (
-        <MemberItem member="kres" title="Александр Крес" left="misha">
+        <MemberItem member="kres" title="Александр Крес" leftTo="misha">
             <p>
                 Непревзойденный басист. Может играть только в перчатках из-за того, что любые
                 музыкальные инструменты бьют его током.

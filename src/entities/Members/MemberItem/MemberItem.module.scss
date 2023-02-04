@@ -2,9 +2,11 @@
     height: 100%;
 
     .image-hidden {
-        @media (min-width: 576px) {
-            display: none;
-            margin-bottom: 15px;
+        display: none;
+        margin-bottom: 14px;
+
+        @media (max-width: 576px) {
+            display: block;
         }
     }
 
@@ -25,14 +27,18 @@
             }
 
             @media (max-width: 576px) {
-                font-size: 32px;
-                justify-content: center;
+                font-size: 19px;
+                justify-content: space-between;
+                align-items: center;
             }
 
             .left,
             .right {
-                width: 42px;
-                height: 42px;
+                width: 32px;
+                height: 32px;
+                background-size: 32px 32px;
+                background-position: center;
+                background-repeat: no-repeat;
 
                 @media (min-width: 576px) {
                     display: none;
@@ -40,11 +46,13 @@
             }
 
             .left {
-                background-image: url("shared/assets/images/arrow-left.jpg");
+                background-image: url("shared/assets/images/arrow-left.svg");
+                margin-right: 5px;
             }
 
             .right {
-                background-image: url("shared/assets/images/arrow-right.jpg");
+                background-image: url("shared/assets/images/arrow-right.svg");
+                margin-left: 5px;
             }
         }
 
@@ -56,6 +64,9 @@
             }
 
             @media (max-width: 576px) {
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
                 width: 100%;
             }
         }

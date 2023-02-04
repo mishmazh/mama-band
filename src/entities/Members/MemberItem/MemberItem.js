@@ -2,39 +2,42 @@ import classes from './MemberItem.module.scss';
 import { burda, kres, masha, misha } from 'shared/lib/imagesImport';
 import Container from 'shared/components/Container/Container';
 import Image from 'shared/components/Image/Image';
-import HeaderTitle from '../HeaderTitle/HeaderTitle';
+import HeaderTitle from '../../HeaderTitle/HeaderTitle';
 import { classNames } from 'shared/lib/classNames';
-import { NavLink } from 'react-router-dom';
+import Arrow from '../Arrow/Arrow';
 
-const MemberItem = ({ member, title, left, right, children }) => {
+export const MemberItem = ({ member, title, leftTo, rightTo, children }) => {
+    const memberMasha = member === 'masha';
+    const memberBurda = member === 'burda';
+    const memberMisha = member === 'misha';
+    const memberKres = member === 'kres';
+
     return (
         <div
             className={classNames(classes.memberItem, {
-                [classes.masha]: member === 'masha',
-                [classes.burda]: member === 'burda',
-                [classes.misha]: member === 'misha',
-                [classes.kres]: member === 'kres',
+                [classes.masha]: memberMasha,
+                [classes.burda]: memberBurda,
+                [classes.misha]: memberMisha,
+                [classes.kres]: memberKres,
             })}
         >
             <HeaderTitle>Участники</HeaderTitle>
             <Container>
                 <div className={classes.body}>
-                    {member === 'masha' && (
+                    {memberMasha && (
                         <Image src={masha} className={classes.imageHidden} alt={title} />
                     )}
-                    {member === 'burda' && (
+                    {memberBurda && (
                         <Image src={burda} className={classes.imageHidden} alt={title} />
                     )}
-                    {member === 'misha' && (
+                    {memberMisha && (
                         <Image src={misha} className={classes.imageHidden} alt={title} />
                     )}
-                    {member === 'kres' && (
-                        <Image src={kres} className={classes.imageHidden} alt={title} />
-                    )}
+                    {memberKres && <Image src={kres} className={classes.imageHidden} alt={title} />}
                     <div className={classes.title}>
-                        <NavLink to={'/members/' + left} className={classes.left} />
+                        <Arrow to={leftTo} className={classes.left} />
                         <div>{title}</div>
-                        <NavLink to={'/members/' + right} className={classes.right} />
+                        <Arrow to={rightTo} className={classes.right} />
                     </div>
                     <div className={classes.textContent}>{children}</div>
                 </div>
@@ -42,5 +45,3 @@ const MemberItem = ({ member, title, left, right, children }) => {
         </div>
     );
 };
-
-export default MemberItem;

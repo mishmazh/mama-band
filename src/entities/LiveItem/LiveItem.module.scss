@@ -1,31 +1,48 @@
 .live-item {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 12px;
+    padding: 12px 12px 0;
+
+    @media (max-width: 576px) {
+        display: block;
+        font-size: 20px;
+    }
 
     &:first-child {
         border-top: 1px solid rgba(255, 255, 255, 0.5);
     }
 
-    > div {
-        width: 200px;
+    .item-1,
+    .item-2,
+    .item-3 {
+        width: 100%;
+        padding-bottom: 12px;
     }
 
-    > div:last-child {
+    .item-1 {
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+
+    .item-2 {
+        text-align: center;
+        align-self: end;
+    }
+
+    .item-3 {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
     }
 
     .date {
         font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .city {
-        align-self: flex-end;
-        text-align: center;
+        margin-bottom: 12px;
     }
 
     .sold {

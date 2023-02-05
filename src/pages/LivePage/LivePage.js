@@ -1,5 +1,5 @@
 import classes from './LivePage.module.scss';
-import { alreadyEvents, futureEvents } from 'shared/lib/dataStorage';
+import { alreadyEvents, futureEvents } from 'shared/helpers/dataStorage';
 import Container from 'shared/components/Container/Container';
 import LiveList from 'features/LiveList/LiveList';
 import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';

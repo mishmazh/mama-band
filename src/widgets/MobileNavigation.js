@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MenuToggle from 'features/MenuToggle/MenuToggle';
-import Drawer from 'features/Drawer/Drawer';
-import Backdrop from "shared/components/Backdrop/Backdrop";
+import { Drawer } from 'features/Drawer';
+import Backdrop from 'shared/components/Backdrop/Backdrop';
 
 const MobileNavigation = () => {
     const [isOpen, setOpen] = useState(false);

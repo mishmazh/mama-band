@@ -1,5 +1,5 @@
 import classes from './MenuToggle.module.scss';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/helpers/classNames';
 
 const MenuToggle = ({ isOpen, openMenu }) => {
     return (

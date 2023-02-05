@@ -1,9 +1,9 @@
 import classes from './MemberItem.module.scss';
-import { burda, kres, masha, misha } from 'shared/lib/imagesImport';
+import { burda, kres, masha, misha } from 'shared/helpers/imagesImport';
 import Container from 'shared/components/Container/Container';
 import Image from 'shared/components/Image/Image';
 import HeaderTitle from '../../HeaderTitle/HeaderTitle';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/helpers/classNames';
 import Arrow from '../Arrow/Arrow';
 
 export const MemberItem = ({ member, title, leftTo, rightTo, children }) => {

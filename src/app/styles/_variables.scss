@@ -7,18 +7,8 @@
     --font-family-base: var(--font-raleway);
 
     --font-size-base: 20px;
-    //--font-line-base: 28px;
-    //--font-base: var(--font-size-base) / var(--font-line-base) var(--font-family-base);
-    //
-    //--title-size-base: 96px;
-    //--title-line-base: 104px;
-    //--title-base: var(--title-size-base) / var(--title-line-base) var(--font-source-code);
-    //
-    //--title-size-lg: 128px;
-    //--title-line-lg: 104px;
-    //--title-lg: var(--title-size-lg) / var(--title-line-lg) var(--font-source-code);
 
-    --bg-loading: url("shared/assets/images/noise.jpg");
+    --bg-main: url("shared/assets/images/bg-noise.jpg");
 
     @media (max-width: 768px) {
         --font-size-base: 17px;

@@ -16,17 +16,17 @@
             padding-top: 80px;
         }
 
+        .image-hidden {
+            @media (min-width: 576px) {
+                display: none;
+            }
+        }
+
         .title {
             font-family: var(--font-source-code);
             font-size: 96px;
 
             @media (max-width: 576px) {
-                display: none;
-            }
-        }
-
-        .image-hidden {
-            @media (min-width: 576px) {
                 display: none;
             }
         }

@@ -1,7 +1,7 @@
 import classes from './Header.module.scss';
 import MyLink from 'shared/components/MyLink';
 import Container from 'shared/components/Container/Container';
-import { navLinks } from 'shared/lib/dataStorage';
+import { navLinks } from 'shared/helpers/dataStorage';
 
 const Header = () => {
     return (

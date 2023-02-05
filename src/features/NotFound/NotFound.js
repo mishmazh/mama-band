@@ -1,6 +1,6 @@
-import classes from './NotFoundPage.module.scss';
+import classes from './NotFound.module.scss';
 
-const NotFoundPage = () => {
+const NotFound = () => {
     return (
         <div className={classes.notFound}>
             <div className={classes.item}>404</div>
@@ -8,4 +8,4 @@ const NotFoundPage = () => {
     );
 };
 
-export default NotFoundPage;
+export default NotFound;

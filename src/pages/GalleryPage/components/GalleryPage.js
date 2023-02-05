@@ -4,7 +4,7 @@ import {
     gallery_2,
     gallery_3,
     gallery_4,
-} from 'shared/lib/imagesImport';
+} from 'shared/helpers/imagesImport';
 import Container from 'shared/components/Container/Container';
 import Image from 'shared/components/Image/Image';
 import HeaderTitle from "entities/HeaderTitle/HeaderTitle";

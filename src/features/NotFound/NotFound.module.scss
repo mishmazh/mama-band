@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: var(--bg-loading);
+    background-image: var(--bg-main);
     animation: loading .1s steps(20) infinite;
 
     .item {

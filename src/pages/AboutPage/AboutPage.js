@@ -1,5 +1,5 @@
 import classes from './AboutPage.module.scss';
-import { bg_about } from 'shared/lib/imagesImport';
+import { bg_about } from 'shared/helpers/imagesImport';
 import Container from 'shared/components/Container/Container';
 import HeaderTitle from "entities/HeaderTitle/HeaderTitle";
 import Image from "shared/components/Image/Image";

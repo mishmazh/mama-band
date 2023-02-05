@@ -1,5 +1,5 @@
 import classes from './Image.module.scss';
-import { classNames } from '../../lib/classNames';
+import { classNames } from '../../helpers/classNames';
 
 const Image = ({ src, alt, isAbsolute = false, className }) => {
     return (

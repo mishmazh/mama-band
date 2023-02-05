@@ -31,6 +31,10 @@ export const routeConfig = {
         path: '/discography',
         element: <DiscographyPage />,
     },
+    ROUTE: {
+        path: '/:route',
+        element: <HomePage />,
+    },
     NOT_FOUND: {
         path: '*',
         element: <NotFound />,

@@ -1,19 +1,14 @@
 import classes from './Header.module.scss';
-import MyLink from 'shared/components/MyLink';
 import Container from 'shared/components/Container/Container';
-import { navLinks } from 'shared/helpers/dataStorage';
+import Navbar from 'shared/components/Navbar/Navbar';
+import MobileNavigation from "../MobileNavigation";
 
 const Header = () => {
     return (
         <header className={classes.header}>
             <Container>
-                <nav>
-                    <ul>
-                        {navLinks.map(({ to, text }, key) => {
-                            return <MyLink to={to} key={key}>{text}</MyLink>;
-                        })}
-                    </ul>
-                </nav>
+                <Navbar />
+                <MobileNavigation />
             </Container>
         </header>
     );

@@ -6,33 +6,33 @@ import DiscographyPage from 'pages/DiscographyPage/DiscographyPage';
 import { GalleryPage } from 'pages/GalleryPage';
 import NotFound from 'features/NotFound/NotFound';
 
-export const routeConfig = {
-    MAIN: {
+export const routeConfig = [
+    {
         path: '/',
         element: <HomePage />,
     },
-    ABOUT: {
+    {
         path: '/about',
         element: <AboutPage />,
     },
-    MEMBERS: {
+    {
         path: '/members/*',
         element: <MembersPage />,
     },
-    LIVE: {
+    {
         path: '/live',
         element: <LivePage />,
     },
-    GALLERY: {
+    {
         path: '/gallery',
         element: <GalleryPage />,
     },
-    DISCOGRAPHY: {
+    {
         path: '/discography',
         element: <DiscographyPage />,
     },
-    NOT_FOUND: {
+    {
         path: '*',
         element: <NotFound />,
     },
-};
+];

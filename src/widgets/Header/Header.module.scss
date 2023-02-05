@@ -4,42 +4,5 @@
     right: 0;
     left: 0;
     z-index: 100;
-    font-size: 32px;
     font-family: var(--font-sofia);
-    text-transform: uppercase;
-
-    @media (max-width: 1200px) {
-        font-size: 28px;
-    }
-
-    @media (max-width: 992px) {
-        font-size: 21px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 15px;
-    }
-
-    @media (max-width: 576px) {
-        display: none;
-    }
-    
-    li {
-        padding: 40px 0;
-
-        a {
-            &:hover {
-                border-bottom: 2px solid #fff;
-            }
-        }
-
-        a[class="active"] {
-            border-bottom: 2px solid #fff;
-        }
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-around;
-    }
 }

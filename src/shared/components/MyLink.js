@@ -6,6 +6,6 @@ const MyLink = ({ to, children, onClick }) => {
             <NavLink to={to} onClick={onClick}>{children}</NavLink>
         </li>
     );
-}
+};
 
 export default MyLink;

@@ -1,4 +1,4 @@
-import classes from "./Delimiter.module.scss";
+import classes from './Delimiter.module.scss';
 
 const Delimiter = () => {
     return (

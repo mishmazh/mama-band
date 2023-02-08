@@ -1,6 +1,6 @@
 import classes from './Navbar.module.scss';
-import {navLinks} from "../../helpers/dataStorage";
-import MyLink from "../MyLink";
+import { navLinks } from '../../helpers/dataStorage';
+import MyLink from '../MyLink';
 
 const Navbar = () => {
     return (

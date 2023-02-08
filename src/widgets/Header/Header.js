@@ -1,7 +1,7 @@
 import classes from './Header.module.scss';
 import Container from 'shared/components/Container/Container';
 import Navbar from 'shared/components/Navbar/Navbar';
-import MobileNavigation from "../MobileNavigation";
+import MobileNavigation from '../MobileNavigation';
 
 const Header = () => {
     return (

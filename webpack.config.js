@@ -27,17 +27,6 @@ function buildLoaders() {
         exclude: /node_modules/,
         use: {
             loader: 'babel-loader',
-            options: {
-                presets: [
-                    '@babel/preset-env',
-                    [
-                        '@babel/preset-react',
-                        {
-                            runtime: 'automatic',
-                        },
-                    ],
-                ],
-            },
         },
     };
 
@@ -67,12 +56,12 @@ function buildLoaders() {
         ],
     };
 
-    const assetImages = {
+    const imgLoader = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
     };
 
-    const assetFonts = {
+    const fontsLoader = {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
         generator: {
@@ -80,7 +69,7 @@ function buildLoaders() {
         },
     };
 
-    return [babelLoader, cssLoader, assetImages, assetFonts];
+    return [imgLoader, fontsLoader, babelLoader, cssLoader];
 }
 
 function buildDevServer() {

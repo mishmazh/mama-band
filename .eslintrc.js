@@ -20,6 +20,7 @@ module.exports = {
     'rules': {
         'object-curly-spacing': [2, 'always'],
         'no-unused-vars': 'warn',
+        'react/prop-types': 'off',
         'indent': [
             'error',
             4
@@ -36,5 +37,11 @@ module.exports = {
             'error',
             'always'
         ]
+    },
+    globals: {
+        '__dirname': true,
+        'module': true,
+        'require': true,
+        'process': true,
     }
 };

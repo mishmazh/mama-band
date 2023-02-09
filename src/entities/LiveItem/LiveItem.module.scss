@@ -1,7 +1,7 @@
 .live-item {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
     padding: 12px 12px 0;
 
     @media (max-width: 576px) {
@@ -10,7 +10,7 @@
     }
 
     &:first-child {
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgb(255 255 255 / 50%);
     }
 
     .item-1,

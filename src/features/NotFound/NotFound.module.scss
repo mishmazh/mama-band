@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-image: var(--bg-main);
-    animation: loading .1s steps(20) infinite;
+    animation: loading 0.1s steps(20) infinite;
 
     .item {
         font-size: 128px;
@@ -16,7 +16,8 @@
         0% {
             background-position: 0 0;
         }
-        100%   {
+
+        100% {
             background-position: 100% 100%;
         }
     }

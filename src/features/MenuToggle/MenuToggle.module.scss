@@ -7,7 +7,7 @@
     height: 24px;
     cursor: pointer;
     transform: rotate(0);
-    transition: transform 0.30s;
+    transition: transform 0.3s;
 
     &.open {
         transform: rotate(-90deg);
@@ -16,7 +16,7 @@
     span,
     &::before,
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         background-color: #fff;
         width: 100%;

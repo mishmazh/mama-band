@@ -1,5 +1,5 @@
 import classes from './MembersPage.module.scss';
-import MyLink from 'shared/components/MyLink';
+import AppLink from 'shared/components/AppLink';
 import MembersContainer from 'features/MembersContainer';
 import Container from 'shared/components/Container/Container';
 
@@ -11,10 +11,10 @@ const MembersPage = () => {
                 <Container>
                     <nav>
                         <ul>
-                            <MyLink to="masha">M.</MyLink>
-                            <MyLink to="burda">A.</MyLink>
-                            <MyLink to="misha">M.</MyLink>
-                            <MyLink to="kres">A.</MyLink>
+                            <AppLink to="masha">M.</AppLink>
+                            <AppLink to="burda">A.</AppLink>
+                            <AppLink to="misha">M.</AppLink>
+                            <AppLink to="kres">A.</AppLink>
                         </ul>
                     </nav>
                 </Container>

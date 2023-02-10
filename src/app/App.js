@@ -1,11 +1,13 @@
 import './styles/index.scss';
-import Header from 'widgets/Header/Header';
 import AppRouter from './router/AppRouter';
+import Navbar from '../widgets/components/Navbar/Navbar';
+import MobileNavbar from '../widgets/components/MobileNavbar/MobileNavbar';
 
 const App = () => {
     return (
         <div className="app">
-            <Header />
+            <Navbar />
+            <MobileNavbar />
             <AppRouter />
         </div>
     );

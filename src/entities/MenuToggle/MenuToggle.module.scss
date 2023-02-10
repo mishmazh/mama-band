@@ -1,17 +1,12 @@
 .menu-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    right: 30px;
     z-index: 210;
     width: 30px;
     height: 24px;
     cursor: pointer;
     transform: rotate(0);
     transition: transform 0.3s;
-
-    &.open {
-        transform: rotate(-90deg);
-    }
 
     span,
     &::before,
@@ -35,8 +30,8 @@
     &::after {
         bottom: 0;
     }
+}
 
-    @media (min-width: 576px) {
-        display: none;
-    }
+.open {
+    transform: rotate(-90deg);
 }

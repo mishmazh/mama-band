@@ -1,6 +1,20 @@
 .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
     font-size: 32px;
     text-transform: uppercase;
+    font-family: var(--font-sofia);
 
     @media (max-width: 1200px) {
         font-size: 28px;
@@ -18,22 +32,13 @@
         display: none;
     }
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    li {
-        padding: 40px 0;
-
-        a {
-            &:hover {
-                border-bottom: 2px solid #fff;
-            }
-        }
-
-        a[class="active"] {
+    a {
+        &:hover {
             border-bottom: 2px solid #fff;
         }
+    }
+
+    a[class="active"] {
+        border-bottom: 2px solid #fff;
     }
 }

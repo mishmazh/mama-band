@@ -1,10 +1,10 @@
 import HomePage from 'pages/HomePage/HomePage';
-import AboutPage from 'pages/AboutPage/AboutPage';
 import { MembersPage } from 'pages/MembersPage';
-import LivePage from 'pages/LivePage/LivePage';
-import DiscographyPage from 'pages/DiscographyPage/DiscographyPage';
+import { LivePage } from 'pages/LivePage';
 import { GalleryPage } from 'pages/GalleryPage';
-import NotFound from 'features/NotFound/NotFound';
+import { NotFoundPage } from 'pages/NotFoundPage';
+import AboutPage from 'pages/AboutPage/AboutPage';
+import { DiscographyPage } from 'pages/DiscographyPage';
 
 export const routeConfig = [
     {
@@ -33,6 +33,6 @@ export const routeConfig = [
     },
     {
         path: '*',
-        element: <NotFound />,
+        element: <NotFoundPage />,
     },
 ];

@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const mode = process.env.mode || 'development';
 const isDev = mode === 'development';
@@ -18,6 +19,9 @@ function buildPlugins() {
             filename: 'styles/[name].[contenthash:8].css',
             chunkFilename: 'styles/[name].[contenthash:8].css',
         }),
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false
+        })
     ];
 }
 

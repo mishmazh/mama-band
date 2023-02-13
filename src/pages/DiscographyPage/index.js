@@ -1,1 +1,1 @@
-export { DiscographyPageLazy as DiscographyPage } from './components/DiscographyPage.lazy';
+export { DiscographyPageLazy as DiscographyPage } from './ui/DiscographyPage.lazy';

@@ -1,1 +1,1 @@
-export { LivePageLazy as LivePage } from './components/LivePage.lazy';
+export { LivePageLazy as LivePage } from './ui/LivePage.lazy';

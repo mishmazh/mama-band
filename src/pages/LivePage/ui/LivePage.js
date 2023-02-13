@@ -1,7 +1,7 @@
 import classes from './LivePage.module.scss';
-import Container from 'src/shared/components/Container/Container';
-import LiveList from 'src/features/LiveList/LiveList';
-import HeaderTitle from 'src/entities/HeaderTitle/HeaderTitle';
+import Container from 'shared/components/Container/Container';
+import LiveList from 'features/LiveList/LiveList';
+import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
 import { alreadyEvents, futureEvents } from '../store';
 
 const LivePage = () => {

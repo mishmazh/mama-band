@@ -1,1 +1,1 @@
-export { GalleryPageLazy as GalleryPage } from './components/GalleryPage.lazy';
+export { GalleryPageLazy as GalleryPage } from './ui/GalleryPage.lazy';

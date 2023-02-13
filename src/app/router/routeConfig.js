@@ -1,10 +1,10 @@
 import HomePage from 'pages/HomePage/HomePage';
 import { MembersPage } from 'pages/MembersPage';
-import { LivePage } from 'pages/LivePage';
 import { GalleryPage } from 'pages/GalleryPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
 import AboutPage from 'pages/AboutPage/AboutPage';
-import { DiscographyPage } from 'pages/DiscographyPage';
+import LivePage from "../../pages/LivePage/ui/LivePage";
+import DiscographyPage from "../../pages/DiscographyPage/ui/DiscographyPage";
 
 export const routeConfig = [
     {

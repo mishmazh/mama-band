@@ -19,9 +19,9 @@ function buildPlugins() {
             filename: 'styles/[name].[contenthash:8].css',
             chunkFilename: 'styles/[name].[contenthash:8].css',
         }),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false
-        })
+        // new BundleAnalyzerPlugin({
+        //     openAnalyzer: false
+        // })
     ];
 }
 

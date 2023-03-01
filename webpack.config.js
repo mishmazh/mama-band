@@ -21,13 +21,13 @@ function buildPlugins(isDev) {
         }),
     ];
 
-    if (isDev) {
-        plugins.push(
-            new BundleAnalyzerPlugin({
-                openAnalyzer: false
-            })
-        );
-    }
+    // if (isDev) {
+    //     plugins.push(
+    //         new BundleAnalyzerPlugin({
+    //             openAnalyzer: false
+    //         })
+    //     );
+    // }
 
     return plugins;
 }

@@ -8,8 +8,8 @@ const mode = process.env.mode || 'development';
 const isDev = mode === 'development';
 const PORT = process.env.port || 3000;
 
-function buildPlugins() {
-    return [
+function buildPlugins(isDev) {
+     const plugins =[
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html'),
             favicon: './public/favicon.gif',
@@ -19,10 +19,17 @@ function buildPlugins() {
             filename: 'styles/[name].[contenthash:8].css',
             chunkFilename: 'styles/[name].[contenthash:8].css',
         }),
-        // new BundleAnalyzerPlugin({
-        //     openAnalyzer: false
-        // })
     ];
+
+    if (isDev) {
+        plugins.push(
+            new BundleAnalyzerPlugin({
+                openAnalyzer: false
+            })
+        );
+    }
+
+    return plugins;
 }
 
 function buildLoaders() {
@@ -104,7 +111,7 @@ module.exports = {
         publicPath: '/',
         clean: true,
     },
-    plugins: buildPlugins(),
+    plugins: buildPlugins(isDev),
     module: {
         rules: buildLoaders(),
     },

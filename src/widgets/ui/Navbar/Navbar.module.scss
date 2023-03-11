@@ -3,8 +3,8 @@
     top: 0;
     right: 0;
     left: 0;
-    height: 80px;
-    z-index: 100;
+    height: var(--navbar-height);
+    z-index: var(--navbar-z-index);
     display: flex;
     align-items: center;
 }

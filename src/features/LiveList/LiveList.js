@@ -1,6 +1,6 @@
 import classes from './LiveList.module.scss';
 import LiveItem from 'entities/LiveItem/LiveItem';
-import Delimiter from 'shared/components/Delimiter/Delimiter';
+import Delimiter from 'shared/ui/Delimiter/Delimiter';
 
 const LiveList = ({ liveItems }) => {
     if (liveItems.length === 0) {

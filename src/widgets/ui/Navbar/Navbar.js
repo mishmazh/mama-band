@@ -1,6 +1,6 @@
 import cls from './Navbar.module.scss';
-import AppLink from 'shared/components/AppLink';
-import Container from 'shared/components/Container/Container';
+import AppLink from 'shared/ui/AppLink/AppLink';
+import Container from 'shared/ui/Container/Container';
 import { navLinks } from '../../store';
 
 const Navbar = () => {

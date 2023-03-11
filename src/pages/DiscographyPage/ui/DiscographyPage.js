@@ -1,8 +1,8 @@
-import { cover } from 'shared/helpers/imagesImport';
+import { cover } from 'shared/lib/imagesImport';
 import classes from './DiscographyPage.module.scss';
-import Image from 'shared/components/Image/Image';
+import Image from 'shared/ui/Image/Image';
 import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
-import Container from 'shared/components/Container/Container';
+import Container from 'shared/ui/Container/Container';
 import { album } from '../store';
 
 const DiscographyPage = () => {

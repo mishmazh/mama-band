@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import classes from './LazyImage.module.scss';
-import { classNames } from '../../helpers/classNames';
+import { classNames } from '../../lib/classNames';
 
 const LazyImage = ({ src, alt }) => {
     const [isLoading, setLoading] = useState(false);

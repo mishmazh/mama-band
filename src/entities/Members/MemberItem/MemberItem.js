@@ -1,12 +1,11 @@
-import classes from './MemberItem.module.scss';
-import { burda, kres, masha, misha } from 'shared/helpers/imagesImport';
-import Container from 'shared/components/Container/Container';
-import Image from 'shared/components/Image/Image';
+import cls from './MemberItem.module.scss';
+import { burda, kres, masha, misha } from 'shared/lib/imagesImport';
+import Container from 'shared/ui/Container/Container';
+import Image from 'shared/ui/Image/Image';
 import HeaderTitle from '../../HeaderTitle/HeaderTitle';
-import { classNames } from 'shared/helpers/classNames';
-import Arrow from '../Arrow/Arrow';
+import { classNames } from 'shared/lib/classNames';
 
-export const MemberItem = ({ member, title, leftTo, rightTo, children }) => {
+export const MemberItem = ({ member, title, children }) => {
     const memberMasha = member === 'masha';
     const memberBurda = member === 'burda';
     const memberMisha = member === 'misha';
@@ -14,32 +13,31 @@ export const MemberItem = ({ member, title, leftTo, rightTo, children }) => {
 
     return (
         <div
-            className={classNames(classes.memberItem, {
-                [classes.masha]: memberMasha,
-                [classes.burda]: memberBurda,
-                [classes.misha]: memberMisha,
-                [classes.kres]: memberKres,
+            className={classNames(cls.memberItem, {
+                [cls.masha]: memberMasha,
+                [cls.burda]: memberBurda,
+                [cls.misha]: memberMisha,
+                [cls.kres]: memberKres,
             })}
         >
             <HeaderTitle>Участники</HeaderTitle>
             <Container>
-                <div className={classes.body}>
+                <div className={cls.body}>
                     {memberMasha && (
-                        <Image src={masha} className={classes.imageHidden} alt={title} />
+                        <Image src={masha} className={cls.imageHidden} alt={title} />
                     )}
                     {memberBurda && (
-                        <Image src={burda} className={classes.imageHidden} alt={title} />
+                        <Image src={burda} className={cls.imageHidden} alt={title} />
                     )}
                     {memberMisha && (
-                        <Image src={misha} className={classes.imageHidden} alt={title} />
+                        <Image src={misha} className={cls.imageHidden} alt={title} />
                     )}
-                    {memberKres && <Image src={kres} className={classes.imageHidden} alt={title} />}
-                    <div className={classes.title}>
-                        <Arrow to={leftTo} className={classes.left} />
-                        <div>{title}</div>
-                        <Arrow to={rightTo} className={classes.right} />
-                    </div>
-                    <div className={classes.textContent}>{children}</div>
+                    {memberKres && (
+                        <Image src={kres} className={cls.imageHidden} alt={title} />
+                    )}
+
+                    <div className={cls.title}>{title}</div>
+                    <div className={cls.content}>{children}</div>
                 </div>
             </Container>
         </div>

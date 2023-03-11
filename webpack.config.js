@@ -9,7 +9,7 @@ const isDev = mode === 'development';
 const PORT = process.env.port || 3000;
 
 function buildPlugins(isDev) {
-     const plugins =[
+    const plugins =[
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html'),
             favicon: './public/favicon.gif',

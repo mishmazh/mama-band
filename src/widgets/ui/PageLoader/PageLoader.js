@@ -1,6 +1,6 @@
 import cls from './PageLoader.module.scss';
-import  Loader from 'shared/components/Loader/Loader';
-import { classNames } from 'shared/helpers/classNames';
+import  Loader from 'shared/ui/Loader/Loader';
+import { classNames } from 'shared/lib/classNames';
 
 const PageLoader = ({ className }) => {
     return (

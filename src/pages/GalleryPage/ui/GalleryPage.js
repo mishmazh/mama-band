@@ -4,9 +4,9 @@ import {
     gallery_2,
     gallery_3,
     gallery_4,
-} from 'shared/helpers/imagesImport';
-import Container from 'shared/components/Container/Container';
-import Image from 'shared/components/Image/Image';
+} from 'shared/lib/imagesImport';
+import Container from 'shared/ui/Container/Container';
+import Image from 'shared/ui/Image/Image';
 import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
 
 const GalleryPage = () => {

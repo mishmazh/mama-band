@@ -1,5 +1,5 @@
 import './Loader.scss';
-import { classNames } from '../../helpers/classNames';
+import { classNames } from '../../lib/classNames';
 
 const Loader = ({ className }) => {
     return (

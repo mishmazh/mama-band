@@ -1,1 +1,1 @@
-export { MembersPageLazy as MembersPage } from './components/MembersPage.lazy';
+export { MembersPageLazy as MembersPage } from './ui/MembersPage.lazy';

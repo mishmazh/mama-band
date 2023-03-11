@@ -14,4 +14,11 @@
     @media (max-width: 576px) {
         --font-size-base: 14px;
     }
+
+    // цвета
+    --overlay-color: rgba(0 0 0 / 90%);
+
+    // navbar
+    --navbar-height: 95px;
+    --navbar-z-index: 100;
 }

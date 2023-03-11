@@ -1,0 +1,51 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--overlay-color);
+    transition: opacity 0.3s;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: var(--bg-main);
+    border-radius: 0 0 30px 30px;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    max-width: 257px;
+    width: 100%;
+    margin: auto;
+    font-size: 32px;
+    font-family: var(--font-sofia);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.opened {
+    .overlay {
+        display: block;
+    }
+
+    .content {
+        transform: translateY(0);
+    }
+}
+
+.link {
+    padding: 20px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #fff;
+    }
+}

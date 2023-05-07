@@ -1,17 +1,15 @@
 import cls from './AboutPage.module.scss';
-import { bg_about } from 'shared/lib/imagesImport';
+import { bg_about_m } from 'shared/lib/imagesImport';
 import Container from 'shared/ui/Container/Container';
-import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
 import Image from 'shared/ui/Image/Image';
 import { Text } from 'shared/ui/Text/Text';
 
 const AboutPage = () => {
     return (
         <div className={cls.aboutPage}>
-            <HeaderTitle>О группе</HeaderTitle>
             <Container>
                 <div className={cls.body}>
-                    <Image src={bg_about} className={cls.imageHidden} alt="about" />
+                    <Image src={bg_about_m} className={cls.imageHidden} alt="about" />
                     <div className={cls.content}>
                         <Text
                             className={cls.titleHidden}

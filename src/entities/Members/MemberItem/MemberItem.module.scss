@@ -24,13 +24,13 @@
     font-family: var(--font-source-code);
     text-align: center;
 
-    @media (min-width: 992px) {
-        font-size: 96px;
-    }
-
     @media (min-width: 576px) {
         font-size: 55px;
         text-align: left;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 96px;
     }
 }
 
@@ -39,13 +39,59 @@
     width: 100%;
     font-size: calc(1vw + 0.6em);
 
-    @media (min-width: 1200px) {
-        width: 50%;
-    }
-
     @media (min-width: 576px) {
         width: 80%;
         text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 28px;
+    }
+}
+
+.navs {
+    font-size: 16vw;
+    padding-top: 30px;
+    user-select: none;
+    font-family: var(--font-source-code);
+
+    @media (min-width: 576px) {
+        font-size: 96px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 576px) {
+            justify-content: left;
+        }
+
+        a {
+            color: rgb(255 255 255 / 40%);
+            transition: color 0.1s;
+
+            &:hover {
+                color: rgb(255 255 255 / 70%);
+            }
+        }
+
+        a[class="active"] {
+            color: #fff;
+        }
+    }
+}
+
+.footer {
+    font-size: calc(1vw + 0.7rem);
+    font-family: var(--font-raleway-italic);
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: 576px) {
+        text-align: left;
+        font-size: 16px;
     }
 }
 
@@ -55,24 +101,40 @@
 .member-item.kres {
     background-size: cover;
     overflow: auto;
-
-    @media (max-width: 576px) {
-        background-image: none;
-    }
 }
 
 .masha {
-    background: url("shared/assets/images/members/masha.jpg") no-repeat center center fixed;
+    background-image: none;
+
+    @media (min-width: 576px) {
+        background-image: url("shared/assets/images/members/masha.jpg");
+        background-position: 69%;
+    }
 }
 
 .burda {
-    background: url("shared/assets/images/members/burda.jpg") no-repeat center center fixed;
+    background-image: none;
+
+    @media (min-width: 576px) {
+        background-image: url("shared/assets/images/members/burda.jpg");
+        background-position: 52%;
+    }
 }
 
 .misha {
-    background: url("shared/assets/images/members/misha.jpg") no-repeat center center fixed;
+    background-image: none;
+
+    @media (min-width: 576px) {
+        background-image: url("shared/assets/images/members/misha.jpg");
+        background-position: 63%;
+    }
 }
 
 .kres {
-    background: url("shared/assets/images/members/kres.jpg") no-repeat center center fixed;
+    background-image: none;
+
+    @media (min-width: 576px) {
+        background-image: url("shared/assets/images/members/kres.jpg");
+        background-position: 55%;
+    }
 }

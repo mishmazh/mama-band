@@ -4,99 +4,103 @@
     background-size: cover;
     overflow: auto;
 
+    @media (max-width: 992px) {
+        height: auto;
+    }
+
     @media (max-width: 576px) {
         background-image: none;
     }
+}
 
-    .body {
-        padding-top: 230px;
+.body {
+    padding-top: 230px;
+
+    @media (max-width: 992px) {
+        padding-top: 90px;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
 
         @media (max-width: 992px) {
-            padding-top: 90px;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .items {
-            display: flex;
-            justify-content: space-between;
+        .cover {
+            max-width: 506px;
+            width: 100%;
+            margin-bottom: 40px;
 
-            @media (max-width: 992px) {
-                flex-direction: column;
-                align-items: center;
+            @media (max-width: 576px) {
+                width: 80%;
+            }
+        }
+
+        .release {
+            max-width: 708px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @media (max-width: 1200px) {
+                max-width: 369px;
             }
 
-            .cover {
-                max-width: 506px;
-                width: 100%;
-                margin-bottom: 40px;
+            .title,
+            .subtitle {
+                font-size: 32px;
 
                 @media (max-width: 576px) {
-                    width: 80%;
+                    font-size: 20px;
                 }
             }
 
-            .release {
-                max-width: 708px;
-                width: 100%;
-                text-align: center;
-                margin-bottom: 20px;
+            .title {
+                margin-bottom: 25px;
 
-                @media (max-width: 1200px) {
-                    max-width: 369px;
+                @media (max-width: 576px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .subtitle {
+                margin-bottom: 12px;
+            }
+
+            ul {
+                font-size: 24px;
+                margin-bottom: 25px;
+
+                @media (max-width: 576px) {
+                    font-size: 14px;
                 }
 
-                .title,
-                .subtitle {
-                    font-size: 32px;
+                li {
+                    color: rgb(255 255 255 / 80%);
+                    margin-bottom: 3px;
 
-                    @media (max-width: 576px) {
-                        font-size: 20px;
+                    span {
+                        font-size: 17px;
                     }
                 }
+            }
 
-                .title {
-                    margin-bottom: 25px;
+            .itunes {
+                background-image: url("shared/assets/images/itunes.jpg");
+                background-size: 190px 51px;
+                width: 190px;
+                height: 51px;
+                border-radius: 10px;
+                margin: auto;
 
-                    @media (max-width: 576px) {
-                        margin-bottom: 15px;
-                    }
-                }
-
-                .subtitle {
-                    margin-bottom: 12px;
-                }
-
-                ul {
-                    font-size: 24px;
-                    margin-bottom: 25px;
-
-                    @media (max-width: 576px) {
-                        font-size: 14px;
-                    }
-
-                    li {
-                        color: rgb(255 255 255 / 80%);
-                        margin-bottom: 3px;
-
-                        span {
-                            font-size: 17px;
-                        }
-                    }
-                }
-
-                .itunes {
-                    background-image: url("shared/assets/images/itunes.jpg");
-                    background-size: 190px 51px;
-                    width: 190px;
-                    height: 51px;
-                    border-radius: 10px;
-                    margin: auto;
-
-                    @media (max-width: 576px) {
-                        background-size: 109px 29px;
-                        width: 109px;
-                        height: 29px;
-                        border-radius: 5px;
-                    }
+                @media (max-width: 576px) {
+                    background-size: 109px 29px;
+                    width: 109px;
+                    height: 29px;
+                    border-radius: 5px;
                 }
             }
         }

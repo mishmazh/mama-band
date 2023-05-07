@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import cls from './MobileNavbar.module.scss';
 import { navLinks } from '../../store';
 import MenuToggle from 'entities/MenuToggle/MenuToggle';

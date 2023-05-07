@@ -1,4 +1,12 @@
 .title {
     font-family: var(--font-source-code);
-    font-size: 96px;
+    font-size: 17vw;
+
+    @media (min-width: 576px) {
+        font-size: 96px;
+    }
+}
+
+.text {
+    font-size: calc(1vw + 0.8rem);
 }

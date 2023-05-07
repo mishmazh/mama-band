@@ -1,56 +1,57 @@
 .home-page {
     height: 100%;
-    background: url("shared/assets/images/bg-home.jpg") no-repeat center center fixed;
+    background-image: url("shared/assets/images/bg-home-mobile.jpg");
+    background-position: center center;
     background-size: cover;
 
+    @media (min-width: 576px) {
+        background-image: url("shared/assets/images/bg-home.jpg");
+    }
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 52px;
+    user-select: none;
+    animation: start 1.2s;
+    font-family: var(--font-source-code);
+
     @media (max-width: 576px) {
-        background-image: url("shared/assets/images/bg-home-mobile.jpg");
+        bottom: 43%;
+        margin-bottom: 0;
     }
 
-    .footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        margin-bottom: 52px;
-        user-select: none;
-        animation: start 1.2s;
-        font-family: var(--font-source-code);
-
-        @media (max-width: 576px) {
-            bottom: 43%;
-            margin-bottom: 0;
+    @keyframes start {
+        0% {
+            opacity: 0;
         }
 
-        .title {
-            font-size: 128px;
-            margin-bottom: 22px;
-
-            @media (max-width: 768px) {
-                font-size: 96px;
-            }
-
-            @media (max-width: 576px) {
-                font-size: 26px;
-                margin-bottom: 0;
-            }
+        100% {
+            opacity: 1;
         }
+    }
+}
 
-        .sub-title {
-            @media (max-width: 576px) {
-                font-size: 14px;
-            }
-        }
+.title {
+    font-size: 128px;
+    margin-bottom: 22px;
 
-        @keyframes start {
-            0% {
-                opacity: 0;
-            }
+    @media (max-width: 768px) {
+        font-size: 96px;
+    }
 
-            100% {
-                opacity: 1;
-            }
-        }
+    @media (max-width: 576px) {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+}
+
+.sub-title {
+    @media (max-width: 576px) {
+        font-size: 14px;
     }
 }

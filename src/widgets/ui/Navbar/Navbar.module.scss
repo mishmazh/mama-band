@@ -1,24 +1,29 @@
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    height: var(--navbar-height);
-    z-index: var(--navbar-z-index);
-    display: flex;
-    align-items: center;
-}
-
-.body {
+    height: 75px;
+    z-index: 100;
     display: none;
+    align-items: center;
+    transition: all 0.2s;
 
     @media (min-width: 576px) {
         display: flex;
-        justify-content: space-around;
-        font-size: calc(1vw + 0.4em);
-        text-transform: uppercase;
-        font-family: var(--font-sofia);
     }
+
+    @media (min-width: 992px) {
+        height: 95px;
+    }
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(1vw + 0.4em);
+    text-transform: uppercase;
+    font-family: var(--font-sofia);
 
     @media (min-width: 992px) {
         font-size: 28px;
@@ -37,4 +42,10 @@
     a[class="active"] {
         border-bottom: 2px solid #fff;
     }
+}
+
+.fade {
+    background-color: rgba(#000, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(#fff, 0.2);
 }

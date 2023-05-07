@@ -1,14 +1,12 @@
 import { cover } from 'shared/lib/imagesImport';
 import classes from './DiscographyPage.module.scss';
 import Image from 'shared/ui/Image/Image';
-import HeaderTitle from 'entities/HeaderTitle/HeaderTitle';
 import Container from 'shared/ui/Container/Container';
 import { album } from '../store';
 
 const DiscographyPage = () => {
     return (
         <div className={classes.discographyPage}>
-            <HeaderTitle>Дискография</HeaderTitle>
             <div className={classes.body}>
                 <Container>
                     <div className={classes.items}>
@@ -28,7 +26,11 @@ const DiscographyPage = () => {
                                     );
                                 })}
                             </ul>
-                            <a href="https://vk.com/club213535217" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://vk.com/club213535217"
+                                target="_blank"
+                                rel="noreferrer nofollow"
+                            >
                                 <div className={classes.itunes} />
                             </a>
                         </div>

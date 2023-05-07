@@ -1,6 +1,4 @@
-import classes from './MembersPage.module.scss';
-import AppLink from 'shared/ui/AppLink/AppLink';
-import Container from 'shared/ui/Container/Container';
+import cls from './MembersPage.module.scss';
 import { Route, Routes } from 'react-router-dom';
 import { NotFoundPage } from '../../NotFoundPage';
 import { memberStore } from '../store';
@@ -8,7 +6,7 @@ import { MemberItem } from 'entities/Members/MemberItem/MemberItem';
 
 const MembersPage = () => {
     return (
-        <div className={classes.membersPage}>
+        <div className={cls.membersPage}>
             <Routes>
                 {
                     memberStore.map((props, key) => {
@@ -36,26 +34,6 @@ const MembersPage = () => {
 
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
-
-            <div className={classes.buttons}>
-                <Container>
-                    <nav>
-                        <ul>
-                            <AppLink to="masha">M.</AppLink>
-                            <AppLink to="burda">A.</AppLink>
-                            <AppLink to="misha">M.</AppLink>
-                            <AppLink to="kres">A.</AppLink>
-                        </ul>
-                    </nav>
-                </Container>
-            </div>
-
-            <div className={classes.footer}>
-                <Container>
-                    Все персонажи являются вымышленными и любое совпадение с реально живущими или
-                    когда-либо жившими людьми случайно.
-                </Container>
-            </div>
         </div>
     );
 };

@@ -8,6 +8,7 @@
     display: none;
     align-items: center;
     transition: all 0.2s;
+    border-bottom: 1px solid transparent;
 
     @media (min-width: 576px) {
         display: flex;
@@ -47,5 +48,5 @@
 .fade {
     background-color: rgba(#000, 0.95);
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(#fff, 0.2);
+    border-bottom-color: rgba(#fff, 0.2);
 }
